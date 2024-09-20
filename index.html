@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>科研团队网站</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e6f7ff; /* 浅蓝色背景 */
+        }
+        header {
+            background-color: #003366; /* 深蓝色 */
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav a {
+            color: #000; /* 黑色字体 */
+            text-decoration: none;
+            cursor: pointer;
+        }
+        nav a:hover {
+            color: #ffcc00; /* 悬停时的金色 */
+            text-decoration: underline;
+        }
+        section {
+            display: none;
+            padding: 20px;
+            margin: 20px;
+            background-color: #ffffff; /* 白色背景 */
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        section h2, section h3, section p, section ul {
+            color: #000; /* 黑色字体 */
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #003366; /* 深蓝色 */
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .members-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .member {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            transition: transform 0.2s;
+        }
+        .member:hover {
+            transform: scale(1.05); /* 悬停放大效果 */
+        }
+        .member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        /* 响应式设计 */
+        @media (max-width: 600px) {
+            .members-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>科研团队网站</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a onclick="showSection('team-intro')">团队简介</a></li>
+        <li><a onclick="showSection('research-fields')">研究领域</a></li>
+        <li><a onclick="showSection('team-members')">团队成员</a></li>
+        <li><a onclick="showSection('research-projects')">教科研项目</a></li>
+        <li><a onclick="showSection('publications')">论文专利成果</a></li>
+        <li><a onclick="showSection('academic-communication')">学术交流</a></li>
+        <li><a onclick="showSection('competitions')">参与（指导）竞赛</a></li>
+    </ul>
+</nav>
+
+<section id="team-intro">
+    <h2>团队简介</h2>
+    <p>我们的科研团队成立于XX年，致力于通过多学科交叉合作，解决当今社会面临的关键科学问题。</p>
+</section>
+
+<section id="research-fields">
+    <h2>研究领域</h2>
+    <ul>
+        <li>生物医学：研究疾病机制与新疗法。</li>
+        <li>材料科学：开发新型功能材料。</li>
+        <li>环境科学：研究生态保护与可持续发展。</li>
+        <li>人工智能：应用AI技术解决实际问题。</li>
+    </ul>
+</section>
+
+<section id="team-members">
+    <h2>团队成员</h2>
+    
+    <h3>教师</h3>
+    <div class="members-grid">
+        <div class="member">
+            <img src="https://via.placeholder.com/100" alt="张教授">
+            <div>
+                <strong>张教授</strong><br>
+                研究方向：生物医学
+            </div>
+        </div>
+        <div class="member">
+            <img src="https://via.placeholder.com/100" alt="李博士">
+            <div>
+                <strong>李博士</strong><br>
+                研究方向：材料科学
+            </div>
+        </div>
+    </div>
+    
+    <h3>学生</h3>
+    <div class="members-grid">
+        <div class="member">
+            <img src="https://via.placeholder.com/100" alt="王研究员">
+            <div>
+                <strong>王研究员</strong><br>
+                研究方向：环境科学
+            </div>
+        </div>
+        <div class="member">
+            <img src="https://via.placeholder.com/100" alt="赵博士">
+            <div>
+                <strong>赵博士</strong><br>
+                研究方向：人工智能
+            </div>
+        </div>
+        <div class="member">
+            <img src="https://via.placeholder.com/100" alt="刘硕士">
+            <div>
+                <strong>刘硕士</strong><br>
+                研究方向：生物信息学
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="research-projects">
+    <h2>科研项目</h2>
+    <ul>
+        <li>项目A：新型抗癌药物的开发，资助单位：国家自然科学基金。</li>
+        <li>项目B：环境污染物监测技术的研究与应用，资助单位：环保局。</li>
+        <li>项目C：基于机器学习的疾病预测模型，资助单位：科技部。</li>
+    </ul>
+</section>
+
+<section id="publications">
+    <h2>论文成果</h2>
+    <ul>
+        <li>Zhang, X. et al. (2023). "新型抗癌药物的发现与机制研究." 《科学杂志》。</li>
+        <li>Li, Y. et al. (2022). "环境污染物的监测与控制." 《环境科学》。</li>
+        <li>Wang, J. et al. (2021). "机器学习在生物医学中的应用." 《人工智能期刊》。</li>
+    </ul>
+</section>
+
+<section id="academic-communication">
+    <h2>学术交流</h2>
+    <p>我们定期参加国内外学术会议，分享研究成果与进展，并举办学术讲座，邀请领域内专家进行交流与合作。</p>
+</section>
+
+<section id="competitions">
+    <h2>参与（指导）竞赛</h2>
+    <ul>
+        <li>2023年国际基因组竞赛，获奖项目：基因组数据分析。</li>
+        <li>2022年全国人工智能大赛，参赛项目：智能医疗诊断系统。</li>
+        <li>2021年绿色科技创新大赛，指导项目：新型环保材料的开发与应用。</li>
+    </ul>
+</section>
+
+<footer>
+    <p>联系信息：邮箱 - team@example.com | 电话 - 123-456-7890 | 地址 - 某某大学某某学院，某某市某某区某某街道123号</p>
+</footer>
+
+<script>
+    window.onload = function() {
+        showSection('team-intro');
+    };
+
+    function showSection(sectionId) {
+        const sections = document.querySelectorAll('section');
+        sections.forEach(section => {
+            section.style.display = 'none';
+        });
+        
+        const selectedSection = document.getElementById(sectionId);
+        if (selectedSection) {
+            selectedSection.style.display = 'block';
+        }
+    }
+</script>
+
+</body>
+</html>
