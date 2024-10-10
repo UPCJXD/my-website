@@ -50,14 +50,16 @@
             color: #000; /* 黑色字体 */
         }
         footer {
-            text-align: center;
-            padding: 10px 0;
-            background-color: #003366; /* 深蓝色 */
-            color: #fff;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
+    text-align: center;
+    padding: 10px 0;
+    background-color: #003366; /* 深蓝色 */
+    color: #fff;
+    width: 100%;
+    position: sticky; /* 使用 sticky 而不是 fixed */
+    bottom: 0;
+    z-index: 1000; /* 确保它不会遮挡其他内容 */
+}
+
         .members-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
