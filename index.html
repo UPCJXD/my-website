@@ -238,34 +238,45 @@
 <style>
     ul {
         list-style-type: disc; /* 设置所有 ul 列表使用实心黑点 */
+        margin: 0; /* 去掉默认边距 */
+        padding-left: 20px; /* 增加内边距 */
     }
     ul ul {
-        list-style-type: disc; /* 强制内层 ul 列表也使用实心黑点 */
+        list-style-type: circle; /* 内层 ul 使用圆点 */
+    }
+    .highlight {
+        color: #ffcc00; /* 高亮金色 */
+        font-weight: bold; /* 加粗字体 */
+    }
+    .year {
+        font-style: italic; /* 年份使用斜体 */
+        color: #666; /* 年份颜色更淡 */
     }
 </style>
 
 <section id="competitions">
     <h2>参与（指导）竞赛</h2>
+
     <h3>参与竞赛</h3>
     <ul>
         <li>国家级获奖
             <ul>
-                <li>2024年</li>
+                <li><span class="year">2024年</span></li>
             </ul>
         </li>
         <li>省级获奖
             <ul>
-                <li>2024年</li>
+                <li><span class="year">2024年</span></li>
             </ul>
         </li>
         <li>市级获奖
             <ul>
-                <li>2024年</li>
+                <li><span class="year">2024年</span></li>
             </ul>
         </li>
         <li>校级获奖
             <ul>
-                <li>2024年</li>
+                <li><span class="year">2024年</span></li>
                 <li>何琳，2024年佳木斯大学教师微课教学比赛三等奖</li>
             </ul>
         </li>
@@ -275,33 +286,28 @@
     <ul>
         <li>国家级获奖
             <ul>
-                <li>2024年</li>
+                <li><span class="year">2024年</span></li>
             </ul>
         </li>
         <li>省级获奖
             <ul>
-              <li>2023年</li>
+                <li><span class="year">2023年</span></li>
                 <li>学生白博闻、黄玉燕、冯正阳、宋坤钊、牛雯靖荣获黑龙江省第七届“知识产权杯”高校发明创新竞赛三等奖，指导教师:周波、<strong class="highlight">杨巍</strong></li>
-                <li>2024年</li>
+                <li><span class="year">2024年</span></li>
             </ul>
         </li>
         <li>市级获奖
             <ul>
-                <li>2024年</li>
+                <li><span class="year">2024年</span></li>
             </ul>
         </li>
         <li>校级获奖
             <ul>
-                <li>2024年</li>
+                <li><span class="year">2024年</span></li>
             </ul>
+        </li>
     </ul>
 </section>
-<style>
-    .highlight {
-        color: #ffcc00; /* 高亮金色 */
-        font-weight: bold; /* 加粗字体 */
-    }
-</style>
 
 
 <footer>
