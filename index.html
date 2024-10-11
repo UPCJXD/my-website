@@ -130,9 +130,63 @@
     </ul>
 </section>
 
+<style>
+    #team-members {
+        max-width: 1200px; /* 设置最大宽度 */
+        margin: 0 auto; /* 居中 */
+        padding: 20px; /* 内边距 */
+        font-family: Arial, sans-serif; /* 设置字体 */
+    }
+
+    h2 {
+        text-align: center; /* 标题居中 */
+        margin-bottom: 30px; /* 底部间距 */
+    }
+
+    h3 {
+        margin-top: 30px; /* 顶部间距 */
+        margin-bottom: 15px; /* 底部间距 */
+        font-size: 1.5em; /* 字体大小 */
+        border-bottom: 2px solid #ccc; /* 底部边框 */
+        padding-bottom: 5px; /* 内边距 */
+    }
+
+    .members-grid {
+        display: grid; /* 使用网格布局 */
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* 自适应列数 */
+        gap: 20px; /* 网格间距 */
+    }
+
+    .member {
+        background: #f9f9f9; /* 背景颜色 */
+        border-radius: 10px; /* 圆角 */
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+        text-align: center; /* 文字居中 */
+        padding: 15px; /* 内边距 */
+        transition: transform 0.2s; /* 动画效果 */
+    }
+
+    .member:hover {
+        transform: translateY(-5px); /* 悬停效果 */
+    }
+
+    .member img {
+        border-radius: 50%; /* 圆形图片 */
+        width: 100px; /* 图片宽度 */
+        height: 100px; /* 图片高度 */
+        object-fit: cover; /* 图片填充方式 */
+        margin-bottom: 10px; /* 图片底部间距 */
+    }
+
+    .highlight {
+        color: #ffcc00; /* 高亮金色 */
+        font-weight: bold; /* 加粗字体 */
+    }
+</style>
+
 <section id="team-members">
     <h2>团队成员</h2>
-    
+
     <h3>教师</h3>
     <div class="members-grid">
         <div class="member">
@@ -142,77 +196,76 @@
                 研究方向：统计分析；Python数据分析
             </div>
         </div>
-         <div class="member">
+        <div class="member">
             <img src="images/LL.jpg" alt="刘琳">
             <div>
                 <strong>刘琳</strong><br>
                 研究方向：模糊数学；模糊系统
             </div>
         </div>
-        
-         <div class="member">
-         <img src="images/jxd.jpg" alt="XXX">
+        <div class="member">
+            <img src="images/jxd.jpg" alt="方秀男">
             <div>
                 <strong>方秀男</strong><br>
                 数学建模指导组
             </div>
-       </div>
-          <div class="member">
-         <img src="images/jxd.jpg" alt="XXX">
+        </div>
+        <div class="member">
+            <img src="images/jxd.jpg" alt="张菊红">
             <div>
                 <strong>张菊红</strong><br>
                 数学建模指导组
             </div>
-       </div>
-        
+        </div>
         <div class="member">
-         <img src="images/YW.jpg" alt="杨巍">
+            <img src="images/YW.jpg" alt="杨巍">
             <div>
                 <strong>杨巍</strong><br>
                 研究方向：鲁棒控制
             </div>
         </div>
         <div class="member">
-         <img src="images/HL.jpg" alt="何琳">
+            <img src="images/HL.jpg" alt="何琳">
             <div>
                 <strong>何琳</strong><br>
                 研究方向：多智能体系统控制；智能网联车控制；复杂网络系统控制
             </div>
         </div>
-    </div>
-     <div class="member">
-         <img src="images/jxd.jpg" alt="靳旭东">
+        <div class="member">
+            <img src="images/jxd.jpg" alt="靳旭东">
             <div>
                 <strong>靳旭东</strong><br>
-                研究方向：智能优化;代理优化；机器学习
+                研究方向：智能优化；代理优化；机器学习
             </div>
+        </div>
     </div>
-    
+
     <h3>学生</h3>
     <div class="members-grid">
         <div class="member">
-            <img src="https://via.placeholder.com/100" alt="XXX">
+            <img src="https://via.placeholder.com/100" alt="学生1">
             <div>
-                <strong>XXX</strong><br>
+                <strong>学生1</strong><br>
                 研究方向：XXX
             </div>
         </div>
         <div class="member">
-            <img src="https://via.placeholder.com/100" alt="XXX">
+            <img src="https://via.placeholder.com/100" alt="学生2">
             <div>
-                <strong>XXX</strong><br>
+                <strong>学生2</strong><br>
                 研究方向：XXX
             </div>
         </div>
         <div class="member">
-            <img src="https://via.placeholder.com/100" alt="XXX">
+            <img src="https://via.placeholder.com/100" alt="学生3">
             <div>
-                <strong>XXX</strong><br>
+                <strong>学生3</strong><br>
                 研究方向：XXX
             </div>
         </div>
     </div>
 </section>
+
 
 <section id="research-projects">
     <h2>科研项目</h2>
